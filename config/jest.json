@@ -1,0 +1,18 @@
+{
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "./config/tsconfig.json"
+    }
+  },
+  "transform": {
+    ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "testEnvironment": "node",
+  "testRegex": "(/__tests__/.*|\\.spec)\\.js$",
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "rootDir": "../"
+}

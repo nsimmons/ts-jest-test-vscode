@@ -1,0 +1,22 @@
+{
+  "name": "ts-jest-test-vscode",
+  "version": "1.0.0",
+  "description": "Example for debugging Typescript Jest tests with breakpoints in VSCode",
+  "main": "index.js",
+  "author": "Nick Simmons",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf build",
+    "prebuild": "yarn run clean",
+    "build": "tsc -p ./config/tsconfig.json --pretty",
+    "pretest": "yarn run build",
+    "test": "jest --no-cache --config ./config/jest.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^20.0.0",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "typescript": "^2.4.2"
+  }
+}
